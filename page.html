@@ -1,0 +1,354 @@
+<html>
+<head>
+    <style>
+    body{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fb2525;
+    background-image: url("sun.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 320px;
+    height: 450px;
+    background:rgb(182, 160, 103);
+    color: #fff;
+    border: 1px solid #fb2525;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    color:#ccc;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    color:#ccc;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"]
+{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  background: transparent;
+  display: inline-block;
+  border: 1px solid #fb2525;
+  box-sizing: border-box;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color:#000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(45, 56, 75);
+    position: relative;
+    top: -25px;
+}
+
+.loginbox a:hover
+{
+    color: #271717;
+}
+
+
+.xyz
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 260px;
+    position: relative;
+    top: -30px;
+    padding: 10;
+}
+.xyz:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color:#000;
+}
+
+/* Full-width input fields */
+.form2 {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  background:rgb(182, 160, 103);
+  border: 1px solid #fb2525;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.form3 input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  background: transparent;
+  display: inline-block;
+  border: 1px solid #fb2525;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #6A5ACD;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+  text-align: center;
+  
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.container {
+    
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background:rgb(182, 160, 103);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.nittin{
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nittin:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.nittin:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+    </style>
+    </head>
+<title>Login Form Design</title>
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login/Signup</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" required>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" required>
+            <input type="submit" name="" value="Login">       
+    </form>
+    <button  class="xyz "onclick="document.getElementById('ab').style.display='block'" type="submit">Signup</button>
+    <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+    </div>
+
+    <div id="ab" class="modal">
+
+        <form class="modal-content animate"  method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('ab').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+    
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input id="myBtn" class="form2" type="text" placeholder="Enter Username" name="uname" required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input class="form3" type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"required>
+    
+                <label for="psw"><b>Confirm Password</b></label>
+                <input class="form3" type="password" placeholder="Enter Confirm Password" name="psw" required>
+    
+                <button class="nittin" id="b1"type="submit">Signup</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+    
+            <div class="container" style="background:rgb(182, 160, 103);">
+                <button type="button" onclick="document.getElementById('ab').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+          alert("Enter your phone number or email address!");
+        });
+        </script>
+<script>
+  var myInput = document.getElementById("psw");
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {  
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+    }
+    
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {  
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
+    }
+  
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {  
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
+    }
+    
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+  }
+  </script>
+</body>
+</html>
